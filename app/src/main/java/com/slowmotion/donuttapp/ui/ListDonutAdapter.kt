@@ -11,7 +11,8 @@ import com.slowmotion.donuttapp.Data.DonutData
 import com.slowmotion.donuttapp.R
 import com.squareup.picasso.Picasso
 
-class ListDonutAdapter(private val listDonut: ArrayList<DonutData>) : RecyclerView.Adapter<ListDonutAdapter.ListViewHolder>() {
+class ListDonutAdapter(private val listDonut: ArrayList<DonutData>)
+    : RecyclerView.Adapter<ListDonutAdapter.ListViewHolder>() {
     private lateinit var onItemClickCallback: OnItemClickCallBack
 
     fun setOnItemClickCallBack(onItemClickCallback: OnItemClickCallBack){
